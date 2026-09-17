@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -12,37 +15,343 @@ body {
   display: none;
 }
 
+/*Code for Modal*/
+
 .modal-overlay {
+  
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(0, 43, 7, 0.988);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  padding: 1.5rem 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .modal-box {
-  background: white;
-  padding: 2rem 2.5rem;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 400px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  padding: 1rem 2rem;
+  border-radius: 0;
+  max-width: 100%;
+  width: 100%;
+  box-shadow: none;
 }
 
+.modal-box h2 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #eeecec;
+  font-family: "Palatino", "URW Palladio L", serif;
+  text-shadow: 2px 2px 4px #292929;
+  text-align: left;
+}
+
+.modal-box h3{
+  color: #eeecec;
+  text-shadow: 2px 2px 4px #292929;
+  font-size: 3rem;
+  text-align: left;
+}
+
+.modal-box h4{
+  color: #eeecec;
+  text-shadow: 2px 2px 4px #292929;
+  text-align: left;
+}
+ .modal-box p {
+  margin: 0.5rem 0;
+  color: #eeecec;
+  text-shadow: 2px 2px 4px #292929;
+  font-size: 1.2rem;
+  text-align: right;
+ }
+
 .close-btn {
-  display: inline-block;
-  margin-top: 1rem;
+  display: block;
+  margin: 0 auto 0;
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 6px;
   background: #333;
+  font-family: "Palatino", "URW Palladio L", serif;
   color: white;
   cursor: pointer;
+  font-style: italic;
+  text-align: center;
+}
+
+.close-btn:hover{
+  background: #838282;
 }
 
 /* when checkbox is UNCHECKED, hide the overlay */
 #modal-toggle:not(:checked) ~ .modal-overlay {
   display: none;
 }
+
+/* Code for Section One*/
+
+.section-one-container{
+  background-color:#003a0e;
+  padding: 0 0 1rem 0;
+}
+.title-card {
+  text-align: left;
+  color: #dcc786;
+  text-shadow: 2px 2px 4px #000;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.first-name {
+  margin: 2rem 0 0.25rem;
+  font-size: 8.5rem;
+  font-weight: normal;
+  font-style: italic;
+  font-family: "Cormorant Garamond", serif;
+  padding: 0 10rem;
+}
+
+.last-name {
+  margin: -1rem 0 0.25rem;
+  font-size: 8.5rem;
+  font-weight: normal;
+  font-style: italic;
+  Font-family: "Goudy Old Style", "Garamond", "Big Caslon", "Times New Roman", serif;
+  padding: 0 10rem;
+}
+
+.title-card p{
+  font-size: 1rem;
+  white-space: nowrap;
+  padding: 1rem 9rem 0 9rem;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-picture{
+  padding: 1rem 10rem;
+}
+
+.profile-image {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgb(0, 108, 15);
+  align-items: center;
+}
+
+.header-container{
+  width: 100%;
+  background-color:#082700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+}
+
+.name p{
+  white-space: nowrap;
+  color: #082700;
+  text-shadow: 2px 2px 4px #dcc786;
+  letter-spacing: 0.01rem;
+  font-size: 1.2rem;
+  
+}
+
+.nav{
+  display: flex;
+  gap: 6rem;
+}
+
+.nav a{
+  text-shadow: 2px 2px 4px #fffdfd;
+  text-decoration: none;
+  color: #dcc786;
+  text-shadow: 2px 2px 4px #020000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.job-link{
+  margin:  1rem 1rem;
+  padding: 0 9rem;
+  margin: 0 0 7rem 0;
+}
+
+.job-link h2{
+  font-family: "Palatino", "URW Palladio L", serif;
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px #0c0c0c;
+  font-size: 1.5rem;
+}
+
+.job-link-button{
+  background-color: rgba(28, 96, 17, 0.988);
+  font-family: "Palatino", "URW Palladio L", serif;
+  color: whitesmoke;
+  border: 1px solid #003a0e;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.job-link-button a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.job-link-button:hover{
+  background-color: #002707;
+  color:black;
+}
+
+.about{
+  margin: 0 40rem 15rem 0;
+  padding: 0 5rem 0 8rem;
+  font-family: "Palatino", "URW Palladio L", serif;
+  color: #ffd7a6;
+  text-shadow: 2px 2px 4px #0c0c0c;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about p{
+  text-align: left;
+}
+
+/* Code for Section Two*/
+
+.section-two-container{
+  background-color: #dcc786; 
+  margin: auto;
+  padding: 1rem 5rem;
+}
+
+.job-history{
+  padding: 0 10rem;
+  color: #000000;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-family: "Didot", serif;
+}
+
+
+#experience-title{
+  font-family: "Palatino", "URW Palladio L", serif;
+  color: #003a0e;
+  text-shadow: 2px 2px 4px #004715;
+  font-size: 2.7rem;
+  margin: 10rem 0 1rem 0;
+  padding: 0 0 5rem 0;
+}
+
+li{
+  margin: 0 0 6rem 0;
+  list-style-type: none;
+}
+
+.job-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.job-entry:hover {
+  opacity: 0.50;
+}
+
+.job-text {
+  text-align: left;
+  flex: 1;
+}
+
+#AF h3,
+#MRCC h3 {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  border: 2px solid #567239;
+  color: #567239;
+  flex-shrink: 0;
+  max-width: 250px;
+}
+
+.job-entry p {
+  color: #000000;
+}
+
+.job-title {
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.job-title hr {
+  border: none;
+  border-top: 2px solid #567239;
+  margin: 5rem 0 0;
+  width: 100%;
+  align-self: stretch;
+}
+
+.skills {
+  display: flex;
+  margin: auto;
+  max-width: 500px;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  border: 2px solid #567239;
+  color: #567239;
+  font-family: "Didot", serif;
+  font-size: 0.95rem;
+  cursor: default;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.skill-badge:hover {
+  background-color: #567239;
+  color: #ffffff;
+}
+
+/*Code for Section Three*/
+
+.section-three-container{
+  background-color: #3a1e00; 
+  margin: auto;
+  padding: 1rem 5rem;
+}
+
+ 
