@@ -8,127 +8,213 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <!-- hidden checkbox controls the modal -->
-  <input type="checkbox" id="modal-toggle" checked>
 
-  <div class="modal-overlay">
-    <div class="modal-box">
-      <div class = "welcome-and-name">
-        <h2>Hi There!👋</h2>
-        <h3>I'm Quin</h3>
-        <h3>Martin</h3>
+    <!-- hidden checkbox controls the modal -->
+    <input type="checkbox" id="modal-toggle" checked>
+
+    <!-- blurred backdrop (click to close) -->
+    <label for="modal-toggle" class="modal-backdrop"></label>
+
+    <div class="modal-overlay">
+      <div class="modal-box">
+        <div class="welcome-and-name">
+          <h2>Hi There!👋</h2>
+          <h3>I'm Quin</h3>
+          <h3>Martin</h3>
+        </div>
+        <div class="major-and-minor">
+          <p>Major: Organizational Leadership</p>
+          <p>Minor: Computer Science</p>
+        </div>
       </div>
-      <div class = "major-and-minor">
-        <p>Major: Organizational Leadership</p>
-        <p>Minor: Computer Science</p>
-      </div>
+      <label for="modal-toggle" class="close-btn">Welcome to My Extended Resume!</label>
     </div>
-    <label for="modal-toggle" class="close-btn">Welcome to My Extended Resume!</label>
-  </div>
-  <div class = "section-one-container">   
-    <header>
-        <div class = "header-container">
-          <div class = "name"><p>Quin Martin</p></div>
-          <div class = "nav">
-            <a href = "#about">About</a>
-            <a href = "#experience">Experience</a>
-            <a href = "#projects">Projects</a>
-            <a href = "#contact">Contact</a>
+
+    <!-- Section One -->
+    <div class="section-one-container">
+      <header>
+        <div class="header-container">
+          <div class="name"><p>Quin Martin</p></div>
+          <div class="nav">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
           </div>
+        </div>
       </header>
 
       <div class="container">
-          <div class = "title-card">
-              <p>Aspiring IT Professional  |  Aspiring Front End Developer </p>
-              <h2 class = "first-name">Quin</h2>
-              <h2 class = "last-name">Martin</h2>
-          </div>
-          <div class = "profile-picture">
-            <img src = "1782312034298.png" alt = "Profile Picture" class = "profile-image">
-          </div>
-      </div>
-      <div class = "job-link">
-        <button class = "job-link-button"   id = "about"><a href = "https://www.americanfidelity.com/" target = "_blank">IT Operations Intern at American Fidelity</a></button>
-      </div>
-      
-      <div class = "about">
-        <div class = "about-text">
-          <p>Hi! My name is Quin Martin. I am a senior at Oklahoma Christian University. I am currently pursuing a degree in Organizational Leadership with a minor in Computer Science. I have a strong interest in technology and aspire to become an IT professional, front-end developer, and eventually get the oportunity to display my leadership skills in a management position. I am passionate about learning new skills and applying them to real-world projects.</p>
+        <div class="title-card">
+          <p>Aspiring IT Professional  |  Aspiring Front End Developer </p>
+          <h2 class="first-name">Quin</h2>
+          <h2 class="last-name">Martin</h2>
         </div>
+        <div class="profile-picture">
+          <img src="1782312034298.png" alt="Profile Picture" class="profile-image">
         </div>
       </div>
-  </div>
-  <div class = "section-two-container"> 
-    <div class = "job-history">
-      <div class = "experience-card"  id = "experience">
-        <h3 id = "experience-title"> Work History </h3>
-        <ul>
-          <li>
-            <a id="AF" class="job-entry" href="https://www.americanfidelity.com" target="_blank" rel="noopener noreferrer">
-              <div class="job-title">
-                <h3>IT Operations Intern at American Fidelity</h3>
-                <hr>
+
+      <div class="job-link">
+        <button class="job-link-button" id="about"><a href="https://www.americanfidelity.com/" target="_blank">IT Operations Intern at American Fidelity</a></button>
+      </div>
+
+      <div class="about">
+        <div class="about-text">
+          <p>Hi! My name is Quin Martin. I am a senior at Oklahoma Christian University. I am currently pursuing a degree in Organizational Leadership with a minor in Computer Science. I have a strong interest in technology and aspire to become an IT professional, front-end developer, and eventually get the opportunity to display my leadership skills in a management position. I am passionate about learning new skills and applying them to real-world projects.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Two -->
+    <div class="section-two-container">
+      <div class="job-history">
+        <div class="experience-card" id="experience">
+          <h3 id="experience-title">Work History</h3>
+          <ul>
+            <li>
+              <a id="AF" class="job-entry" href="https://www.americanfidelity.com" target="_blank" rel="noopener noreferrer">
+                <div class="job-title">
+                  <div class="job-heading">
+                    <img class="job-logo" src="1-removebg-preview.png" alt="American Fidelity logo">
+                    <h3>IT Operations Intern at American Fidelity</h3>
+                  </div>
+                  <hr>
+                </div>
+                <div class="job-text">
+                  <p><i>(June 2026 - Present)</i></p>
+                  <p>Currently working as an IT Operations Intern at American Fidelity, gaining hands-on experience in technical support, hardware replacements, ticket management, and system maintenance.</p>
+                </div>
+              </a>
+              <div class="skills">
+                <span class="skill-badge">IT Support</span>
+                <span class="skill-badge">System Maintenance</span>
+                <span class="skill-badge">Service Now</span>
               </div>
-              <div class="job-text">
-                <p><i>(June 2026 - Present)</i></p>
-                <p>Currently working as an IT Operations Intern at American Fidelity, gaining hands-on experience in technical support, hardware replacements, ticket management, and system maintenance.</p>
+            </li>
+
+            <li>
+              <a id="MRCC" class="job-entry" href="https://www.mrcc.org/" target="_blank" rel="noopener noreferrer">
+                <div class="job-title">
+                  <div class="job-heading">
+                    <img class="job-logo" src="2-removebg-preview.png" alt="Memorial Road Church of Christ logo">
+                    <h3>Technology Management Intern at Memorial Road Church of Christ</h3>
+                  </div>
+                  <hr>
+                </div>
+                <div class="job-text">
+                  <p><i>(August 2023 - May 2026)</i></p>
+                  <p>Provided AV and IT support for Memorial Road's college class' weekly services and special events, operating sound, video, and lighting equipment while troubleshooting technical issues in real time. Trained and coordinated volunteer team members to ensure consistent, high-quality production. Balanced hands-on technical work with team leadership in a fast-paced, live-event setting.</p>
+                </div>
+              </a>
+              <div class="skills">
+                <span class="skill-badge">AV Production</span>
+                <span class="skill-badge">Live Troubleshooting</span>
+                <span class="skill-badge">Team Leadership</span>
+                <span class="skill-badge">New Hire Training</span>
               </div>
-            </a>
-            <div class="skills">
-              <span class="skill-badge">IT Support</span>
-              <span class="skill-badge">System Maintence</span>
-              <span class="skill-badge">Service Now</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Three -->
+    <div class="section-three-container">
+      <div class="projects-tab" id="projects">
+        <div class="projects-and-certifications-card">
+          <h3>Projects &amp; Certifications</h3>
+        </div>
+
+        <div class="projects">
+
+          <!-- Project 1: text left, image right -->
+          <div class="project personal-website">
+            <div class="project-text">
+              <h4>Personal Website / Extended Resume</h4>
+              <p>Designed and built a responsive personal website from scratch using semantic HTML5 and CSS3. The site presents my background, skills, and projects in a clean, easy-to-navigate layout that adapts to desktop, tablet, and mobile screens using Flexbox, CSS Grid, and media queries. I focused on accessible markup, consistent typography and color styling with CSS variables, and subtle hover and transition effects for a polished feel, all without frameworks or libraries.</p>
             </div>
-          </li>
+            <img src="Screenshot 2026-09-21 100744.png" alt="example code for personal website">
+          </div>
 
-          <li>
-            <a id="MRCC" class="job-entry" href="https://www.mrcc.org/" target="_blank" rel="noopener noreferrer">
-              <div class="job-title">
-                <h3>Technology Management Intern at Memorial Road Church of Christ</h3>
-                <hr>
-              </div>
-              <div class="job-text">
-                <p><i>(August 2025 - May 2026)</i></p>
-                <p>Provided AV and IT support for Memorial Road's college class' weekly services and special events, operating sound, video, and lighting equipment while troubleshooting technical issues in real time. Trained and coordinated volunteer team members to ensure consistent, high-quality production. Balanced hands-on technical work with team leadership in a fast-paced, live-event setting.</p>
-              </div>
-            </a>
-            <div class="skills">
-              <span class="skill-badge">AV Production</span>
-              <span class="skill-badge">Live Troubleshooting</span>
-              <span class="skill-badge">Team Leadership</span>
-              <span class="skill-badge">New Hire Training</span>
+          <hr id="horizontal">
+
+          <!-- Project 2: video left, text right -->
+          <div class="project pos-system">
+            <video controls>
+              <source src="POS System Demo.mp4" type="video/mp4">
+              Your browser doesn't support the video tag.
+            </video>
+            <div class="project-text">
+              <h4>Point of Sale System</h4>
+              <p>Designed and developed a desktop point-of-sale application in Java using the Eclipse IDE. The system lets users add items to an order, calculate subtotals, tax, and totals, and process transactions through a clear, easy-to-use interface. I applied object-oriented principles such as classes, inheritance, and encapsulation to organize the code into maintainable components for products, orders, and payments, and tested the application to make sure calculations and inputs were handled accurately.</p>
             </div>
-          </li>
-        </ul>    
-      </div>
-    </div>
-    </div>
-  </div>
-
-  <div class = "section-three-container">
-    <div class = "ptojects-tab" id = "projects">
-      <div class = "projects-and-certifications-card">
-        <h3>Projects & Certifications</h3>
-      </div>
-      <div class = "projects">
-        <div class = "personal-website">
-           <h4>Personal Website / Extended Resume</h4>
-           <p>Designed and built a responsive personal website from scratch using semantic HTML5 and CSS3. The site presents my background, skills, and projects in a clean, easy-to-navigate layout that adapts to desktop, tablet, and mobile screens using Flexbox, CSS Grid, and media queries. I focused on accessible markup, consistent typography and color styling with CSS variables, and subtle hover and transition effects for a polished feel, all without frameworks or libraries.</p>  
-           <img id = "personal-website-example" src = "" alt = "example code for personal website">
           </div>
-          <hr id = "horizontal">
-        <div class = "pos-system">
-          <h4>Point of Sale System</h4>
-            <p>Designed and developed a desktop point-of-sale application in Java using the Eclipse IDE. The system lets users add items to an order, calculate subtotals, tax, and totals, and process transactions through a clear, easy-to-use interface. I applied object-oriented principles such as classes, inheritance, and encapsulation to organize the code into maintainable components for products, orders, and payments, and tested the application to make sure calculations and inputs were handled accurately.</p>
-            <img id = "pos-system-example" src = "" alt = "example code for pos system">
-          </div>
-      </div>
 
-      <div class = "certifications">
-        <h4>Certifications</h4>
-        
+        </div>
+
+        <!-- Section Four -->
+      <div class="carousel-container" id="certifications">
+        <div class="certifications">
+          <div class="cert-marquee">
+              <div class="cert-track">
+
+                <!-- Set 1 -->
+                <div class="cert-card">
+                  <h5>Learn Java</h5>
+                  <p class="cert-issuer">Code Academy</p>
+                </div>
+                <div class="cert-card">
+                  <h5>Java: Algorithms</h5>
+                  <p class="cert-issuer">Code Academy</p>
+                </div>
+                <div class="cert-card">
+                  <h5>Responsive Web Design</h5>
+                  <p class="cert-issuer">FreeCodeCamp</p>
+                </div>
+                <div class="cert-card">
+                  <h5>Learn Intermediate Java</h5>
+                  <p class="cert-issuer">Code Academy</p>
+                </div>
+
+                <!-- Set 2: exact copy of set 1 (hidden from screen readers) -->
+                <div class="cert-card">
+                  <h5>Learn Java</h5>
+                  <p class="cert-issuer">Code Academy</p>
+                </div>
+                <div class="cert-card">
+                  <h5>Java: Algorithms</h5>
+                  <p class="cert-issuer">Code Academy</p>
+                </div>
+                <div class="cert-card">
+                  <h5>Responsive Web Design</h5>
+                  <p class="cert-issuer">FreeCodeCamp</p>
+                </div>
+                 <div class="cert-card">
+                  <h5>Learn Intermediate Java</h5>
+                  <p class="cert-issuer">Code Academy</p>
+                </div>
+
+              </div>  
+            </div>     
+          </div>       
+        </div>         
+      </div>          
+    </div>            
+
+    <footer class="section-four-container" id="contact">
+      <h5>Let's Connect!</h5>
+      <div class="social-media-links">
+        <a href="https://www.linkedin.com/in/quinton-martin-263172347/" id="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <img src="images-removebg-preview (1).png" alt="LinkedIn logo">LinkedIn
+        </a>
+        <a href="https://github.com/qmart78" id="github" target="_blank" rel="noopener noreferrer">
+          <img src="images-removebg-preview.png" alt="GitHub logo">GitHub
+        </a>
+        <a href="mailto:quin.martin15@gmail.com" id="gmail" target="_blank" rel="noopener noreferrer">
+          <img src="gmail-removebg-preview.png" alt="gmail logo">Email
+        </a>
       </div>
-    </div>
-  </div>
+    </footer>
   </body>
 </html>
