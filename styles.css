@@ -20,11 +20,11 @@ body {
 
 .modal-overlay {
   position: fixed;
+  font-family: "Palatino", "URW Palladio L", serif;
   inset: 0;                     
   margin: auto;                 
   width: min(90%, 800px);       
   height: fit-content;          
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,6 @@ body {
 }
 
 .modal-box {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   background: transparent;
@@ -53,7 +52,7 @@ body {
   font-weight: 700;
   font-size: 1.5rem;
   color: #eeecec;
-  font-family: "Palatino", "URW Palladio L", serif;
+  font-family: "Times", "Times New Roman", serif;
   text-shadow: 2px 2px 4px #292929;
   text-align: left;
 }
@@ -76,6 +75,7 @@ body {
   text-shadow: 2px 2px 4px #292929;
   font-size: 1.2rem;
   text-align: right;
+  font-family: "FreeMono", monospace;
  }
 
 .close-btn {
@@ -575,12 +575,12 @@ li{
 
 @keyframes cert-scroll {
   from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }   /* exactly one full set */
+  to   { transform: translateX(-50%); }   
 }
 
 .cert-card {
   flex: 0 0 280px;
-  margin-right: 1.5rem;            /* margin, not gap, so -50% lines up exactly */
+  margin-right: 1.5rem;            
   border-radius: 16px;
   min-height: 120px;
   display: flex;
@@ -606,7 +606,7 @@ li{
   font-style: italic;
 }
 
-/* for people who have reduced motion turned on: no animation, just scroll by hand */
+
 @media (prefers-reduced-motion: reduce) {
   .cert-marquee {
     overflow-x: auto;
